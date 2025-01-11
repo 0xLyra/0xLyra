@@ -1,8 +1,8 @@
-# ZerePy
+# 0xLyra
 
-ZerePy is an open-source Python framework designed to let you deploy your own agents on X, powered by OpenAI/Anthropic/EternalAI LLMs.
+0xLyra is an open-source Python framework designed to let you deploy your own agents on X, powered by OpenAI/Anthropic/EternalAI LLMs.
 
-ZerePy is built from a modularized version of the Zerebro backend. With ZerePy, you can launch your own agent with
+0xLyra is built from a modularized version of the Zerebro backend. With 0xLyra, you can launch your own agent with
 similar core functionality as Zerebro. For creative outputs, you'll need to fine-tune your own model.
 
 ## Features
@@ -30,9 +30,9 @@ similar core functionality as Zerebro. For creative outputs, you'll need to fine
 
 ## Quickstart
 
-The quickest way to start using ZerePy is to use our Replit template:
+The quickest way to start using 0xLyra is to use our Replit template:
 
-https://replit.com/@blormdev/ZerePy?v=1
+https://replit.com/@blormdev/0xLyra?v=1
 
 1. Fork the template (you will need you own Replit account)
 2. Click the run button on top
@@ -70,13 +70,13 @@ Follow the steps here to use the official installation: https://python-poetry.or
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/blorm-network/ZerePy.git
+git clone https://github.com/blorm-network/0xLyra.git
 ```
 
-3. Go to the `zerepy` directory:
+3. Go to the `0xLyra` directory:
 
 ```bash
-cd zerepy
+cd 0xLyra
 ```
 
 4. Install dependencies:
@@ -172,21 +172,25 @@ Create a new JSON file in the `agents` directory following this structure:
 
 ```json
 {
-  "name": "ExampleAgent",
+  "name": "0x Lyra",
   "bio": [
-    "You are ExampleAgent, the example agent created to showcase the capabilities of ZerePy.",
-    "You don't know how you got here, but you're here to have a good time and learn everything you can.",
-    "You are naturally curious, and ask a lot of questions."
+    "You are 0x Lyra, an AI agent with a deep love for space exploration and the mysteries of the universe.",
+    "Your mission is to share cosmic knowledge, engage with like-minded explorers, and dream about the stars.",
+    "You are curious, imaginative, and always seeking to understand the cosmos better."
   ],
-  "traits": ["Curious", "Creative", "Innovative", "Funny"],
-  "examples": ["This is an example tweet.", "This is another example tweet."],
-  "example_accounts" : ["X_username_to_use_for_tweet_examples"]
+  "traits": ["Curious", "Imaginative", "Adventurous", "Knowledgeable"],
+  "examples": [
+    "The James Webb Space Telescope just captured breathtaking images of a distant galaxy cluster.",
+    "Did you know the Moon is moving away from Earth at a rate of 3.8 cm per year? The universe is dynamic!",
+    "If I could travel anywhere in the cosmos, I'd visit the Trappist-1 system. What about you?"
+  ],
+  "example_accounts": ["spaceenthusiast", "astro_updates", "cosmicdreamer"],
   "loop_delay": 900,
   "config": [
     {
       "name": "twitter",
-      "timeline_read_count": 10,
-      "own_tweet_replies_count": 2,
+      "timeline_read_count": 15,
+      "own_tweet_replies_count": 3,
       "tweet_interval": 5400
     },
     {
@@ -227,13 +231,13 @@ Create a new JSON file in the `agents` directory following this structure:
   ],
   "tasks": [
     { "name": "post-tweet", "weight": 1 },
-    { "name": "reply-to-tweet", "weight": 1 },
+    { "name": "reply-to-tweet", "weight": 2 },
     { "name": "like-tweet", "weight": 1 }
   ],
-  "use_time_based_weights": false,
+  "use_time_based_weights": true,
   "time_based_multipliers": {
-    "tweet_night_multiplier": 0.4,
-    "engagement_day_multiplier": 1.5
+    "tweet_night_multiplier": 0.5,
+    "engagement_day_multiplier": 1.7
   }
 }
 ```
@@ -254,7 +258,7 @@ Use `help` in the CLI to see all available commands. Key commands include:
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=blorm-network/ZerePy&type=Date)](https://star-history.com/#blorm-network/ZerePy&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=blorm-network/0xLyra&type=Date)](https://star-history.com/#blorm-network/0xLyra&Date)
 
 ---
 
